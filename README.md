@@ -1,9 +1,6 @@
 # product-category-classifier
 ML projekat za automatsku klasifikaciju proizvoda po nazivu
 
-product-category-classifier
-ML projekat za automatsku klasifikaciju proizvoda po nazivu
-
 Product Category Classifier
 Automatski predviđa kategoriju proizvoda na osnovu naziva, ubrzavajući unos novih proizvoda u online prodavnicu.
 
@@ -16,6 +13,7 @@ train_model.py Skript za treniranje modela
 predict_category.py Skript za interaktivnu predikciju
 best_product_category_model.pkl Sačuvani model
 README.md
+
 Kako koristiti
 Treniranje modela: python train_model.py
 Predikcija kategorija: python predict_category.py
