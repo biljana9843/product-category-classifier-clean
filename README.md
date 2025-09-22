@@ -1,31 +1,48 @@
-# product-category-classifier
-ML projekat za automatsku klasifikaciju proizvoda po nazivu
-
 Product Category Classifier
-Automatski predviđa kategoriju proizvoda na osnovu naziva, ubrzavajući unos novih proizvoda u online prodavnicu.
+
+Ovaj projekat koristi mašinsko učenje za automatsku klasifikaciju proizvoda prema nazivu, ubrzavajući unos artikala u online prodavnicu.
 
 Struktura projekta
-product-category-classifier/
 
-notebooks/ Analiza i treniranje modela (Jupyter/Colab)
-products.csv Dataset sa 30.000+ proizvoda
-train_model.py Skript za treniranje modela
-predict_category.py Skript za interaktivnu predikciju
-best_product_category_model.pkl Sačuvani model
-README.md
+notebooks/ – analize i eksperimenti u Jupyter/Colab sveskama
 
-Kako koristiti
-Treniranje modela: python train_model.py
-Predikcija kategorija: python predict_category.py
-Unesite naziv proizvoda i dobićete predviđenu kategoriju. Za kraj unesite exit.
+products.csv – skup podataka sa nazivima proizvoda i kategorijama
 
-Primeri
+train_model.py – trenira model i čuva ga u best_product_category_model.pkl
+
+predict_category.py – omogućava interaktivnu predikciju kategorije
+
+README.md – uputstvo za rad sa projektom
+
+Kako pokrenuti projekat
+
+Kloniraj repozitorijum:
+git clone https://github.com/biljana9843/product-category-classifier-clean.git
+cd product-category-classifier-clean
+
+Instaliraj potrebne biblioteke:
+pip install -r requirements.txt
+
+(Po želji) treniraj model na lokalnim podacima:
+python train_model.py
+
+Pokreni skriptu za predikciju:
+python predict_category.py
+Zatim unesi naziv proizvoda; za izlaz otkucaj exit.
+
+Primeri unosa i očekivanih kategorija
+
 iphone 7 32gb gold → Mobile Phones
+
 olympus e m10 mark iii → Digital Cameras
+
 kenwood k20mss15 solo → Microwaves
+
 bosch wap28390gb 8kg 1400 spin → Washing Machines
+
 bosch serie 4 kgv39vl31g → Fridge Freezers
+
 smeg sbs8004po → Fridge Freezers
 
-Tehnologije i biblioteke
-Python 3.13.3, pandas, scikit-learn, joblib, Jupyter/Colab
+Napomena
+Fajl best_product_category_model.pkl nije postavljen na GitHub zbog veličine. Može se dobiti pokretanjem train_model.py.
